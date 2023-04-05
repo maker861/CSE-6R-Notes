@@ -7,11 +7,13 @@
 \usepackage{amsthm}
 \usepackage{listings}
 \usepackage{blkarray}
+\usepackage{varwidth}
 \usepackage{amsmath}
 \usepackage[dvipsnames,svgnames,x11names]{xcolor} % A variety of preset colors
 \usepackage[top = 1in, bottom = 1in, left = 1.2in, right=1.2in,marginparwidth=1.2in]{geometry}
 \usepackage{enumitem} % There's a built-in \begin{enumerate} ... \end{enumerate}, but this package provides a more customizable one
 \usepackage[book]{ragged2e}
+\usepackage[most]{tcolorbox}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
@@ -107,6 +109,13 @@ allcolors=black
 \tableofcontents
 \clearpage
 \mainmatter
+\tcbset{
+	enhanced,
+	colback=backcolour,
+	boxrule=0.1pt,
+	colframe=red!30!gray,
+	fonttitle=\bfseries
+}
 \lstset{
 	style = mystyle
 }
@@ -125,14 +134,10 @@ Basic Data Types:
 \begin{center}
 	int - Holds any \textbf{whole number}.
 \end{center}
-\subsection*{Example}%
-\label{sub:Example}
 \lstinputlisting{intexample.py}
 \begin{center}
 	float - Holds any \textbf{decimal}.
 \end{center}
-\subsection*{Example}%
-\label{sub:Example}
 \lstinputlisting{floatexample.py}
 \begin{center}
 	bool - Holds either \textbf{True} or \textbf{False}.
@@ -141,9 +146,41 @@ Basic Data Types:
 \begin{center}
 	str - Holds \textbf{one or more characters}, represented with double or single quotes. (Note that it is common to call variables of type str as strings)
 \end{center}
-\subsection*{Example}%
 \label{sub:E}
 \lstinputlisting{strexample.py}
 Note that in Python we can assign multiple variables in one line as shown in the example below.
 \lstinputlisting{multivarassign.py}
+There is a fifth special basic data type called \textbf{NoneType}.
+\begin{center}
+	NoneType - When there is no data to be stored in a variable, assigning the value \textbf{None}.
+\end{center}
+\lstinputlisting{nonetypeexample.py}
+\break
+\section{Strings}%
+\label{sec:Strings}
+\subsection{Zero-based numbering}%
+\label{subsec:Zero-based numbering}
+
+Consider the string below:
+\lstinputlisting{stringindexexample.py}
+In Python, data is \textbf{zero-indexed}. Meaning that the \textbf{initial element} of a sequence is assigned the \textbf{position(index) 0} instead of the position 1.\\
+Hence in the line above the first element or index 0 is D, the third element or index 2 is u, and so forth.
+\subsection{Indexing}%
+\label{subsec:Indexing}
+We can verify the fact above through the use of the \textbf{indexing operator}, which allows us to access elements at specific indexes. For example:
+\lstinputlisting{indexoperatorex.py}
+\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{D}
+\end{tcolorbox}
+\subsection*{Substrings}%
+\label{sub:Substrings}
+We call \textbf{sequential characters} in a string a \textbf{substring}. The indexing operator can be used to extract substrings. In general we do this by:
+\lstinputlisting{substringgenex.py}
+Here start represents the starting position and end is the ending position of the substring.\\
+Note that the $ +1 $ is due to the \textbf{end index} being \textbf{exclusive} in Python.\\
+We can see this work more specifically in the example below:
+\lstinputlisting{substringspecex.py}
+\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{Terror}
+\end{tcolorbox}
 \end{document}

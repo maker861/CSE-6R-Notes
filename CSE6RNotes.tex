@@ -1,0 +1,149 @@
+\documentclass[13pt,a4paper,oneside]{book}
+\usepackage[nottoc]{tocbibind}
+\usepackage{titlesec}
+\usepackage[titles]{tocloft}
+\usepackage{amssymb}
+\usepackage{ gensymb }
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{blkarray}
+\usepackage{amsmath}
+\usepackage[dvipsnames,svgnames,x11names]{xcolor} % A variety of preset colors
+\usepackage[top = 1in, bottom = 1in, left = 1.2in, right=1.2in,marginparwidth=1.2in]{geometry}
+\usepackage{enumitem} % There's a built-in \begin{enumerate} ... \end{enumerate}, but this package provides a more customizable one
+\usepackage[book]{ragged2e}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\PP}{\mathbb{P}}
+\newtheorem{theorem}{Theorem}
+\pagenumbering{arabic}
+\usepackage{dsfont}
+\usepackage{dcolumn}
+\newcolumntype{2}{D{.}{}{2.0}}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{venndiagram}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks,
+allcolors=black
+}
+
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\renewcommand\cftchapfont{\normalfont}
+\renewcommand\cftchappagefont{\normalfont}
+
+\AtBeginDocument{\renewcommand\contentsname{Table of Contents}}
+
+\titleformat{\chapter}[display]
+{}{\hfill\rule{.7\textwidth}{3pt}}{0pt}
+{\hspace*{.3\textwidth}\huge\bfseries}[\addvspace{-1pt}]
+\titleformat{name=\chapter,numberless}[display]
+{}{\hfill\rule{.7\textwidth}{3pt}}{0pt}
+{\hspace*{.3\textwidth}\huge\bfseries}[\addvspace{-1pt}]
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\begin{document}
+\begin{titlepage}
+\begin{center}
+	\normalsize
+	\begin{doublespace}
+	\vspace*{0.5in}
+	UC San Diego\
+	
+	\vspace{1in}
+	
+	\textbf{\MakeUppercase{CSE6R NOTES}}
+	
+	\vspace{1in}
+	
+	Summarized course notes\
+	by Emyl Safin bin Mohd Zaky\
+	
+	
+	
+	\vspace{0.75in}
+	
+	
+	\vspace{0.75in}
+	\end{doublespace} 
+	
+	\begin{singlespace}
+	Instructor:\ 
+	Moshiri Niema\
+	
+	\vfill
+	SP23    
+	\end{singlespace} 
+\end{center}
+\end{titlepage}
+\frontmatter
+\tableofcontents
+\clearpage
+\mainmatter
+\lstset{
+	style = mystyle
+}
+\lstset{
+language = python
+}
+\lstset{
+	inputpath = D:/Latex/Python/CSE6R/Notes/Code Listing
+}
+\chapter{The Basics}%
+\label{cha:The Basics}
+\section{Variables}%
+\label{sec:Variables}
+We pass data to the computer through the use of \textbf{variables}. Variables can be assigned a value which will have a \textbf{basic data type} and can be plugged into expressions like in math. 
+Basic Data Types:
+\begin{center}
+	int - Holds any \textbf{whole number}.
+\end{center}
+\subsection*{Example}%
+\label{sub:Example}
+\lstinputlisting{intexample.py}
+\begin{center}
+	float - Holds any \textbf{decimal}.
+\end{center}
+\subsection*{Example}%
+\label{sub:Example}
+\lstinputlisting{floatexample.py}
+\begin{center}
+	bool - Holds either \textbf{True} or \textbf{False}.
+\end{center}
+\lstinputlisting{boolexample.py}
+\begin{center}
+	str - Holds \textbf{one or more characters}, represented with double or single quotes. (Note that it is common to call variables of type str as strings)
+\end{center}
+\subsection*{Example}%
+\label{sub:E}
+\lstinputlisting{strexample.py}
+Note that in Python we can assign multiple variables in one line as shown in the example below.
+\lstinputlisting{multivarassign.py}
+\end{document}

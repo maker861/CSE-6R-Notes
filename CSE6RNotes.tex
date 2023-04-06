@@ -183,4 +183,88 @@ We can see this work more specifically in the example below:
 \begin{tcolorbox}[title=Output,center title,hbox]
 	\tcbox{Terror}
 \end{tcolorbox}
+\subsection*{String length}%
+\label{sub:String length}
+We can call the \textbf{len function} to find the \textbf{length} of a string. For example:
+\lstinputlisting{lenexample.py}
+\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{4}
+\end{tcolorbox}
+It can also be called directly on the string as such:
+\lstinputlisting{lengexample.py}
+Say we wished to obtain the following about a substring:
+\begin{enumerate}
+	\item Prefix of string up to index N
+	\item Suffix of string starting at index N
+\end{enumerate}
+We could obtain them as such:
+	\lstinputlisting{fixex.py}
+Note that I have used shorthand notation above.\\
+For the prefix when I exclude the start value Python will assume it is 0, similarly for the suffix when I exclude the end value Python will assume it is the last index $ +1 $.
+\subsection*{Negative indices}%
+\label{sub:Negative indices}
+Negative indices are valid in Python.\\
+A \textbf{negative index} $ -n $ represents the $ \mathbf{n} $ \textbf{th character from the end}. For example:
+	\lstinputlisting{negindex.py}
+	\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{2}
+	\end{tcolorbox}
+\subsection{+ Operator}%
+\label{sub:+ Operator}
+We can use the \textbf{+ operator} to join multiple strings. For example:
+	\lstinputlisting{plusoperatorex.py}
+	\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{LaTeX}
+	\end{tcolorbox}
+Strings can only be concatenated with other strings.\\
+To concatenate a string with another data type we would get its \textbf{string representation} by calling the function \textbf{str()}. For example:
+	\lstinputlisting{strrepex.py}
+	\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{Pay2Win}
+	\end{tcolorbox}
+\break
+\subsection{Representing long strings}%
+\label{sub:Representing long strings}
+Say we had a variable that we wanted to assign to a very long string. We could write it out in one line but that would be less legible.\\
+Instead we could use \textbf{backslash} "$\backslash$" to \textbf{join multiple strings declared on different lines}. For example:
+	\lstinputlisting{backslashex.py}
+This would give the same result as declaring the entire string as one.\\
+Not important but this behavior is caused by Python's use of implicit concatenation and how Python handles physical and logical lines.
+\subsection*{String with multiple lines.}%
+\label{sub:String with multiple lines.}
+We can store a \textbf{multiline string} into a sigle variable by the use of the $\backslash$\textbf{n} "newlines" each time we wish to have a line break. For example:
+	\lstinputlisting{newlineex.py}
+Alternatively we could use three quotation marks to improve legibility as shown below:
+	\lstinputlisting{triplequoteex.py}
+	\begin{tcolorbox}[title=Output,hbox]
+		\tcbox[tikznode={align=left}]{
+		Number 28.\\\\
+		Jackson Pollock, American\\
+		1912-1956\\\\
+		Enamel on Canvas.
+		}
+	\end{tcolorbox}
+\break
+\section{Printing}%
+\label{sec:Printing}
+To get your program to output text we call the function \textbf{print()}. This is called printing to \textbf{standard output}. \\
+We have already seen examples of this function in some of the sample code above. 
+To use this function, we just specify whatever you want displayed in the parentheses.
+	\lstinputlisting{helloworld.py}
+	\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{Hello World!}
+	\end{tcolorbox}
+As seen in earlier examples using print() on a variable will print the value of that variable. It is also important to note that \textbf{indexing and + operators can be used with print()}. For example:
+	\lstinputlisting{printex.py}
+	\begin{tcolorbox}[title=Output,center title,hbox]
+	\tcbox{redrum equals murder}
+	\end{tcolorbox}
+Note that the $ -1 $ above denotes the step of the indexing operator.
+	\lstinputlisting{indexstepex.py}
+By default the print() function adds a $\backslash$ n at the end of whatever we are printing.\\
+We can change this behavior and determine the character(s) added at the end of print() by:
+	\lstinputlisting{printendex.py}
+	\begin{tcolorbox}[title=Output,center title,hbox]
+		\tcbox{Wraeclast \& Oriath.}
+	\end{tcolorbox}
 \end{document}

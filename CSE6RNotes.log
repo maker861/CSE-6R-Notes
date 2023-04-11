@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.3)  5 APR 2023 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.3)  10 APR 2023 22:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1134,15 +1134,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (D:/Latex/Python/CSE6R/Notes/Code Listing/helloworld.py)
 (D:/Latex/Python/CSE6R/Notes/Code Listing/printex.py)
 (D:/Latex/Python/CSE6R/Notes/Code Listing/indexstepex.py)
-(D:/Latex/Python/CSE6R/Notes/Code Listing/printendex.py) [5] (CSE6RNotes.aux)
+(D:/Latex/Python/CSE6R/Notes/Code Listing/printendex.py) [5]
+(D:/Latex/Python/CSE6R/Notes/Code Listing/commentsexample.py)
+(D:/Latex/Python/CSE6R/Notes/Code Listing/multilinecomment.py) [6]
+Chapter 2.
+[7
+
+] (CSE6RNotes.aux)
 Package rerunfilecheck Info: File `CSE6RNotes.out' has not changed.
-(rerunfilecheck)             Checksum: ADF7F674A3B1246F32EA913F0416F0ED;949.
+(rerunfilecheck)             Checksum: ACDA7BF274DCC8A4F4CF86C536D9EEB2;1540.
  ) 
 Here is how much of TeX's memory you used:
- 30486 strings out of 476375
- 606992 string characters out of 5788976
+ 30540 strings out of 476375
+ 608163 string characters out of 5788976
  1995299 words of memory out of 5000000
- 50195 multiletter control sequences out of 15000+600000
+ 50218 multiletter control sequences out of 15000+600000
  517974 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,8n,104p,452b,1350s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1158,9 +1164,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/emy
 ls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Users/emyls/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on CSE6RNotes.pdf (7 pages, 175477 bytes).
+Output written on CSE6RNotes.pdf (9 pages, 188439 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 125 named destinations out of 1000 (max. 500000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 

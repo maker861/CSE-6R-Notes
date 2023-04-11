@@ -267,4 +267,49 @@ We can change this behavior and determine the character(s) added at the end of p
 	\begin{tcolorbox}[title=Output,center title,hbox]
 		\tcbox{Wraeclast \& Oriath.}
 	\end{tcolorbox}
+\break
+\section{Operators}%
+\label{sec:Operators}
+\begin{center}
+\begin{tabular}{l l l}
+	Addition & $+$ &   \\
+	Subtraction & - &   \\
+	Multiplication & * &   \\
+	Division & / &   \\
+	Integer division & $/ /$ & $3 / /2=1$ \\
+	Remainder (modulo) & \% &   \\
+	Exponentiation & ** &   \\
+	Negation & - & 
+\end{tabular}
+\end{center}
+\subsection{Operator Precedence}%
+\label{sub:Operator Precedence}
+From highest to lowest:
+\begin{center}
+\begin{tabular}{l l}
+	$()$ & Parentheses \\
+	$* *$ & Exponentiation \\
+	$-$ & Negation \\
+	$*\,,\,/\,,\,/ /\,,\,\%$ & Multiplication , division , remainder \\
+	$+\,,\,-$ & Addition , Subtraction \\
+	$=\,,\,+=\,,\,-=\,,\,$ etc. & Assignment \\
+\end{tabular}
+\end{center}
+\section{Comments}%
+\label{sec:Comments}
+There are two ways we can comment on a piece of code in Python. Single line comments and multi line comments.
+\subsection*{Single line comments}%
+\label{sub:Single line comments}
+We use the character ' \# ' to make single line comments. For example:
+	\lstinputlisting{commentsexample.py}
+	For single line comments we place the comment \textbf{above} if we're describing a \textbf{block of code} and \textbf{on the same line to the right} if we're describing \textbf{a line of code}.
+\subsection*{Multi line comments}%
+\label{sub:Multi line c}
+We use quote marks to denote multi line comments. A multi line comment starts with three consecutive quote marks and ends with three consecutive quote marks. For example:
+	\lstinputlisting{multilinecomment.py}
+\chapter{Conditionals}%
+\label{cha:Conditionals}
+\section{Boolean algebra}%
+\label{sec:Boolean algebra}
+
 \end{document}

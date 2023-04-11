@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1680747764 "CSE6RNotes.tex" "CSE6RNotes.pdf" "CSE6RNotes" 1680747767 0
+["pdflatex"] 1681189712 "CSE6RNotes.tex" "CSE6RNotes.pdf" "CSE6RNotes" 1681189715 0
   "C:/Users/emyls/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1680727362 81981 9119a9c64388b3a8aca28e6f471116cc ""
   "C:/Users/emyls/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1680723377 9292 db6693a15b9e1b1a8d1c5204dc14186a ""
   "C:/Users/emyls/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1675485930 23173873 caed6ac80f0ab78905c61d0fa45e1b31 ""
@@ -200,12 +200,13 @@
   "C:/Users/emyls/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/x11nam.def" 1656236890 9124 8aaebcf7eff7655936dd67b677fbd2b0 ""
   "C:/Users/emyls/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/emyls/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "CSE6RNotes.aux" 1680747767 5836 b3b4513a12f367f4cb8ccb9562b8610f "pdflatex"
-  "CSE6RNotes.out" 1680747767 949 adf7f674a3b1246f32ea913f0416f0ed "pdflatex"
-  "CSE6RNotes.tex" 1680747763 10064 35544167e503cacd82a6ed53a0525271 ""
-  "CSE6RNotes.toc" 1680747767 613 f9a130a912a7a2682b979a70e391cf30 "pdflatex"
+  "CSE6RNotes.aux" 1681189715 7255 660d9ea743e33ca2ec298596702e5ec6 "pdflatex"
+  "CSE6RNotes.out" 1681189715 1540 acda7bf274dcc8a4f4cf86c536d9eeb2 "pdflatex"
+  "CSE6RNotes.tex" 1681189707 11712 29a5eb59c53969c112aa8d90959bf0ab ""
+  "CSE6RNotes.toc" 1681189715 982 c0c0662c790962f741a3891550d9d606 "pdflatex"
   "Code Listing/backslashex.py" 1680740114 438 53cfc7da5b705cfb268881de7e168c04 ""
   "Code Listing/boolexample.py" 1680723169 24 1a7798a0a5948079df5a1f6860de671d ""
+  "Code Listing/commentsexample.py" 1681178902 124 6d64ff6049b34d85f9cc51cf31e70d6a ""
   "Code Listing/fixex.py" 1680735670 65 b35c875f4d3640abe87408d000730e5f ""
   "Code Listing/floatexample.py" 1680723026 21 bc308350b52040a05efba5fe6c217611 ""
   "Code Listing/helloworld.py" 1680745760 23 68e6efc097c82971923bdc954bb40031 ""
@@ -214,6 +215,7 @@
   "Code Listing/intexample.py" 1680722962 17 52227b151cb8d4ac8197bc88ff7d7cc2 ""
   "Code Listing/lenexample.py" 1680734418 66 e81dc64c90df92be2776081516123b58 ""
   "Code Listing/lengexample.py" 1680734591 26 b78eb1c7e9616424cfd7ec44514c6d61 ""
+  "Code Listing/multilinecomment.py" 1681179490 236 5ab98fd9c1f115fe632085d1e557b04c ""
   "Code Listing/multivarassign.py" 1680723735 41 0ac6a1ed08db402cfbf0ab9c405e815c ""
   "Code Listing/negindex.py" 1680736355 46 d9c82321d08e377c50f980a4d5ec5691 ""
   "Code Listing/newlineex.py" 1680740848 93 2a6f59b59c622e8192f58583aa96319a ""
